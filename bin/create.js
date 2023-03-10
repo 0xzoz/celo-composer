@@ -15,6 +15,7 @@ const createAsync = async (command) => {
         "react-native-app-without-expo": "React Native (without Expo)",
         "flutter-app": "Flutter",
         "angular-app": "Angular",
+        foundry: "Foundry",
         hardhat: "Hardhat",
         truffle: "Truffle",
         subgraphs: "TheGraph",
@@ -26,6 +27,7 @@ const createAsync = async (command) => {
         "react-native-app-without-expo": "react-native-app",
         "flutter-app": "flutter-app",
         "angular-app": "angular-app",
+        foundry: "foundry",
         hardhat: "hardhat",
         truffle: "truffle",
         subgraphs: "subgraphs",
@@ -82,6 +84,7 @@ const createAsync = async (command) => {
         message: "Choose smart-contract framework:",
         default: availablePackages["hardhat"],
         choices: [
+            availablePackages["foundry"],
             availablePackages["hardhat"],
             availablePackages["truffle"],
             "None",
